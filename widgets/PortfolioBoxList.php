@@ -3,13 +3,14 @@
 namespace Tee\Portfolio\Widgets;
 
 use View, Config;
-use Tee\Portfolio\Models\PageCategory;
+use Tee\Page\Models\PageCategory;
+
 
 class PortfolioBoxList {
 
     public function register(array $options)
     {
-        $category = PageCategory::where('type', '=', PageCategory::DYNAMIC)->first();
+        $category = PageCategory::where('type', '=', PageCategory::PORTFOLIO)->first();
         if(moduleEnabled('i18n'))
         {
             $pages = $category->pages()->where(function($query) {
