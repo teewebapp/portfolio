@@ -4,7 +4,7 @@
 	"keywords": ["teewebapp", "portfolio"],
 	"license": "MIT",
 	"require": {
-		"teewebapp/page": "dev-master@dev",
+		"teewebapp/page": "dev-master@dev"
 	},
 	"autoload": {
 		"classmap": [
