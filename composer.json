@@ -8,7 +8,13 @@
 	},
 	"autoload": {
 		"classmap": [
-			"."
+			"commands",
+			"controllers",
+			"models",
+			"seeds",
+			"tests",
+			"widgets",
+			"ServiceProvider.php"
 		]
 	},
 	"minimum-stability": "stable"
