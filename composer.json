@@ -1,0 +1,15 @@
+{
+	"name": "teewebapp/portfolio",
+	"description": "Portfolio Module for TeeWebApp",
+	"keywords": ["teewebapp", "portfolio"],
+	"license": "MIT",
+	"require": {
+		"teewebapp/page": "dev-master@dev",
+	},
+	"autoload": {
+		"classmap": [
+			"."
+		]
+	},
+	"minimum-stability": "stable"
+}

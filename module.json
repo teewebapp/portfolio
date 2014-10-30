@@ -1,0 +1,15 @@
+{
+    "enabled": true,
+    "seeder": "Tee\\Portfolio\\Seeds\\DatabaseSeeder",
+    "provider": ["Tee\\Portfolio\\ServiceProvider"],
+    "order": 20,
+    "admin": {
+        "menuOptions": [
+            {
+                "label": "Portfólio",
+                "url": "/admin/portfolio",
+                "icon": "/packages/module/portfolio/assets/images/icon_portfolio.png"
+            }
+        ]
+    }
+}
