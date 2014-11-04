@@ -4,7 +4,7 @@ namespace Tee\Portfolio;
 
 use Tee\Portfolio\Widgets\PortfolioBoxList;
 use Tee\System\Widget;
-use App;
+use Event;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider {
 
@@ -15,5 +15,13 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
             'portfolioBoxList',
             __NAMESPACE__.'\\Widgets\\PortfolioBoxList'
         );
+
+        Event::listen('admin::loadMenu', function($menu) {
+            $format = '<img src="%s" class="fa" />&nbsp;&nbsp;<span>%s</span>';
+            $menu->add(
+                sprintf($format, moduleAsset('portfolio', 'images/icon_portfolio.png'), 'Portfólio'),
+                route('admin.portfolio.index')
+            );
+        });
     }
 }
