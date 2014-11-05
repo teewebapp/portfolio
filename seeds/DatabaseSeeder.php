@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder {
      */
     public function run()
     {
-        $this->call(__NAMESPACE__.'\\PortfolioCategoryTableSeeder');
+        $this->call(__NAMESPACE__.'\\PageCategoryTableSeeder');
     }
 
 }
