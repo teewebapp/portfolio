@@ -9,7 +9,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Tee\\Portfolio": "."
+			"Tee\\Portfolio\\": "."
 		}
 	},
 	"minimum-stability": "stable"
