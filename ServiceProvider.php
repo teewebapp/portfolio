@@ -16,7 +16,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
             __NAMESPACE__.'\\Widgets\\PortfolioBoxList'
         );
 
-        Event::listen('admin::loadMenu', function($menu) {
+        Event::listen('admin::menu.load', function($menu) {
             $format = '<img src="%s" class="fa" />&nbsp;&nbsp;<span>%s</span>';
             $menu->add(
                 sprintf($format, moduleAsset('portfolio', 'images/icon_portfolio.png'), 'Portfólio'),
